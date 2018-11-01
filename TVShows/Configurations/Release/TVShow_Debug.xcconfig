@@ -1,0 +1,13 @@
+//
+//  TVShow_Debug.xcconfig
+//  TVShows
+//
+//  Created by Aliaksandr Taustyha on 11/1/18.
+//  Copyright © 2018 Aliaksandr Taustyha. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "TVShows/Configurations/Release/TVShow.xcconfig"
+#include "Pods/Pods-TVShows.debug.xcconfig"

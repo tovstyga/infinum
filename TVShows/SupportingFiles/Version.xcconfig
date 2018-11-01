@@ -1,0 +1,14 @@
+//
+//  Version.xcconfig
+//  TVShows
+//
+//  Created by Aliaksandr Taustyha on 11/1/18.
+//  Copyright © 2018 Aliaksandr Taustyha. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+VERSION_RELEASE=0
+VERSION_BUILD=0
+VERSION_NAME=1.0

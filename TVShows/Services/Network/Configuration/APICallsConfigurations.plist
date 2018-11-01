@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseURL</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Prod</key>
+			<string>https://api.infinum.academy</string>
+			<key>Dev</key>
+			<string>https://api.infinum.academy</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
