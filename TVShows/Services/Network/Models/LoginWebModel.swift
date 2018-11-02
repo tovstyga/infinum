@@ -9,16 +9,20 @@
 import Foundation
 import ObjectMapper
 
-class LoginResponseModel: Mappable {
+struct LoginWebModel: Mappable {
     
     private(set) var token: String?
     
-    required init?(map: Map) {
-        token = try? map.value("token")
+    private enum Keys: String {
+        case token = "token"
     }
     
-    func mapping(map: Map) {
-        token <- map["token"]
+    init?(map: Map) {
+        token = try? map.value(Keys.token.rawValue)
+    }
+    
+    mutating func mapping(map: Map) {
+        token <- map[Keys.token.rawValue]
     }
     
 }

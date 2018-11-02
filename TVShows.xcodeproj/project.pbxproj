@@ -58,8 +58,32 @@
 		4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419C218B4D9200782486 /* DictionaryBuilder.swift */; };
 		401541A0218B4DCB00782486 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419F218B4DCB00782486 /* LoginService.swift */; };
 		401541A1218B4DCB00782486 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419F218B4DCB00782486 /* LoginService.swift */; };
-		401541A4218B4E8800782486 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginResponseModel.swift */; };
-		401541A5218B4E8800782486 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginResponseModel.swift */; };
+		401541A4218B4E8800782486 /* LoginWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginWebModel.swift */; };
+		401541A5218B4E8800782486 /* LoginWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginWebModel.swift */; };
+		401541A8218C3BCA00782486 /* ShowListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A7218C3BCA00782486 /* ShowListService.swift */; };
+		401541A9218C3BCA00782486 /* ShowListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A7218C3BCA00782486 /* ShowListService.swift */; };
+		401541AB218C3D6D00782486 /* ShowWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541AA218C3D6D00782486 /* ShowWebModel.swift */; };
+		401541AC218C3D6D00782486 /* ShowWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541AA218C3D6D00782486 /* ShowWebModel.swift */; };
+		401541AE218C4BBC00782486 /* ShowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541AD218C4BBC00782486 /* ShowService.swift */; };
+		401541AF218C4BBC00782486 /* ShowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541AD218C4BBC00782486 /* ShowService.swift */; };
+		401541B1218C4F9C00782486 /* EpisodeWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B0218C4F9C00782486 /* EpisodeWebModel.swift */; };
+		401541B2218C4F9C00782486 /* EpisodeWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B0218C4F9C00782486 /* EpisodeWebModel.swift */; };
+		401541B5218C529900782486 /* EpisodesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B4218C529900782486 /* EpisodesListService.swift */; };
+		401541B6218C529900782486 /* EpisodesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B4218C529900782486 /* EpisodesListService.swift */; };
+		401541B8218C671800782486 /* EpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B7218C671800782486 /* EpisodeService.swift */; };
+		401541B9218C671800782486 /* EpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541B7218C671800782486 /* EpisodeService.swift */; };
+		401541BB218C6D1F00782486 /* PublishEpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541BA218C6D1F00782486 /* PublishEpisodeService.swift */; };
+		401541BC218C6D1F00782486 /* PublishEpisodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541BA218C6D1F00782486 /* PublishEpisodeService.swift */; };
+		401541BF218C7BDB00782486 /* CommentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541BE218C7BDB00782486 /* CommentsService.swift */; };
+		401541C0218C7BDB00782486 /* CommentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541BE218C7BDB00782486 /* CommentsService.swift */; };
+		401541C2218C7BF000782486 /* PublishCommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C1218C7BF000782486 /* PublishCommentService.swift */; };
+		401541C3218C7BF000782486 /* PublishCommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C1218C7BF000782486 /* PublishCommentService.swift */; };
+		401541C5218C7D0800782486 /* CommentWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C4218C7D0800782486 /* CommentWebModel.swift */; };
+		401541C6218C7D0800782486 /* CommentWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C4218C7D0800782486 /* CommentWebModel.swift */; };
+		401541C8218C862600782486 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C7218C862600782486 /* MediaService.swift */; };
+		401541C9218C862600782486 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C7218C862600782486 /* MediaService.swift */; };
+		401541CB218C863900782486 /* MediaWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CA218C863900782486 /* MediaWebModel.swift */; };
+		401541CC218C863900782486 /* MediaWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CA218C863900782486 /* MediaWebModel.swift */; };
 		4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047C452218ADC1300599F57 /* AppDelegate.swift */; };
 		4047C458218ADC1300599F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C456218ADC1300599F57 /* Main.storyboard */; };
 		4047C45A218ADC1600599F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4047C459218ADC1600599F57 /* Assets.xcassets */; };
@@ -94,7 +118,19 @@
 		40154197218B4CBE00782486 /* WebServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceFactory.swift; sourceTree = "<group>"; };
 		4015419C218B4D9200782486 /* DictionaryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBuilder.swift; sourceTree = "<group>"; };
 		4015419F218B4DCB00782486 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		401541A3218B4E8800782486 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
+		401541A3218B4E8800782486 /* LoginWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWebModel.swift; sourceTree = "<group>"; };
+		401541A7218C3BCA00782486 /* ShowListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListService.swift; sourceTree = "<group>"; };
+		401541AA218C3D6D00782486 /* ShowWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowWebModel.swift; sourceTree = "<group>"; };
+		401541AD218C4BBC00782486 /* ShowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowService.swift; sourceTree = "<group>"; };
+		401541B0218C4F9C00782486 /* EpisodeWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeWebModel.swift; sourceTree = "<group>"; };
+		401541B4218C529900782486 /* EpisodesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesListService.swift; sourceTree = "<group>"; };
+		401541B7218C671800782486 /* EpisodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeService.swift; sourceTree = "<group>"; };
+		401541BA218C6D1F00782486 /* PublishEpisodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishEpisodeService.swift; sourceTree = "<group>"; };
+		401541BE218C7BDB00782486 /* CommentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsService.swift; sourceTree = "<group>"; };
+		401541C1218C7BF000782486 /* PublishCommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishCommentService.swift; sourceTree = "<group>"; };
+		401541C4218C7D0800782486 /* CommentWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentWebModel.swift; sourceTree = "<group>"; };
+		401541C7218C862600782486 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
+		401541CA218C863900782486 /* MediaWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWebModel.swift; sourceTree = "<group>"; };
 		4047C44F218ADC1300599F57 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4047C452218ADC1300599F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4047C457218ADC1300599F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -248,6 +284,9 @@
 		40154193218B4ABC00782486 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				401541BD218C7B8000782486 /* Comments */,
+				401541B3218C527000782486 /* Episode */,
+				401541A6218C3BA600782486 /* Shows */,
 				4015419A218B4D1C00782486 /* Login */,
 				40154194218B4B3500782486 /* WebCommand.swift */,
 				40154197218B4CBE00782486 /* WebServiceFactory.swift */,
@@ -274,9 +313,42 @@
 		401541A2218B4E5D00782486 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				401541A3218B4E8800782486 /* LoginResponseModel.swift */,
+				401541A3218B4E8800782486 /* LoginWebModel.swift */,
+				401541AA218C3D6D00782486 /* ShowWebModel.swift */,
+				401541B0218C4F9C00782486 /* EpisodeWebModel.swift */,
+				401541C4218C7D0800782486 /* CommentWebModel.swift */,
+				401541CA218C863900782486 /* MediaWebModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		401541A6218C3BA600782486 /* Shows */ = {
+			isa = PBXGroup;
+			children = (
+				401541A7218C3BCA00782486 /* ShowListService.swift */,
+				401541AD218C4BBC00782486 /* ShowService.swift */,
+			);
+			path = Shows;
+			sourceTree = "<group>";
+		};
+		401541B3218C527000782486 /* Episode */ = {
+			isa = PBXGroup;
+			children = (
+				401541B4218C529900782486 /* EpisodesListService.swift */,
+				401541B7218C671800782486 /* EpisodeService.swift */,
+				401541BA218C6D1F00782486 /* PublishEpisodeService.swift */,
+				401541C7218C862600782486 /* MediaService.swift */,
+			);
+			path = Episode;
+			sourceTree = "<group>";
+		};
+		401541BD218C7B8000782486 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				401541BE218C7BDB00782486 /* CommentsService.swift */,
+				401541C1218C7BF000782486 /* PublishCommentService.swift */,
+			);
+			path = Comments;
 			sourceTree = "<group>";
 		};
 		4047C446218ADC1300599F57 = {
@@ -544,21 +616,33 @@
 			files = (
 				40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				40154142218AE92200782486 /* AppDelegate.swift in Sources */,
+				401541C9218C862600782486 /* MediaService.swift in Sources */,
+				401541AF218C4BBC00782486 /* ShowService.swift in Sources */,
+				401541C3218C7BF000782486 /* PublishCommentService.swift in Sources */,
 				40154176218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
 				40154179218B329C00782486 /* WebService.swift in Sources */,
+				401541B2218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154173218B210400782486 /* WebConfiguration.swift in Sources */,
-				401541A5218B4E8800782486 /* LoginResponseModel.swift in Sources */,
+				401541A5218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154196218B4B3500782486 /* WebCommand.swift in Sources */,
 				4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A1218B4DCB00782486 /* LoginService.swift in Sources */,
 				4015417C218B349200782486 /* WebServiceRequest.swift in Sources */,
 				40154199218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				401541B6218C529900782486 /* EpisodesListService.swift in Sources */,
 				4015418F218B400600782486 /* Operators.swift in Sources */,
 				40154183218B36B200782486 /* String+Localization.swift in Sources */,
+				401541C0218C7BDB00782486 /* CommentsService.swift in Sources */,
 				40154192218B467B00782486 /* NSError+Presets.swift in Sources */,
+				401541A9218C3BCA00782486 /* ShowListService.swift in Sources */,
 				4015417F218B34E900782486 /* WebServiceResponse.swift in Sources */,
+				401541C6218C7D0800782486 /* CommentWebModel.swift in Sources */,
+				401541AC218C3D6D00782486 /* ShowWebModel.swift in Sources */,
+				401541B9218C671800782486 /* EpisodeService.swift in Sources */,
 				4015418C218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
 				40154189218B384300782486 /* Constants.swift in Sources */,
+				401541BC218C6D1F00782486 /* PublishEpisodeService.swift in Sources */,
+				401541CC218C863900782486 /* MediaWebModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,21 +652,33 @@
 			files = (
 				40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */,
+				401541C8218C862600782486 /* MediaService.swift in Sources */,
+				401541AE218C4BBC00782486 /* ShowService.swift in Sources */,
+				401541C2218C7BF000782486 /* PublishCommentService.swift in Sources */,
 				40154175218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
 				40154178218B329C00782486 /* WebService.swift in Sources */,
+				401541B1218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154172218B210400782486 /* WebConfiguration.swift in Sources */,
-				401541A4218B4E8800782486 /* LoginResponseModel.swift in Sources */,
+				401541A4218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154195218B4B3500782486 /* WebCommand.swift in Sources */,
 				4015419D218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A0218B4DCB00782486 /* LoginService.swift in Sources */,
 				4015417B218B349200782486 /* WebServiceRequest.swift in Sources */,
 				40154198218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				401541B5218C529900782486 /* EpisodesListService.swift in Sources */,
 				4015418E218B400600782486 /* Operators.swift in Sources */,
 				40154182218B36B200782486 /* String+Localization.swift in Sources */,
+				401541BF218C7BDB00782486 /* CommentsService.swift in Sources */,
 				40154191218B467B00782486 /* NSError+Presets.swift in Sources */,
+				401541A8218C3BCA00782486 /* ShowListService.swift in Sources */,
 				4015417E218B34E900782486 /* WebServiceResponse.swift in Sources */,
+				401541C5218C7D0800782486 /* CommentWebModel.swift in Sources */,
+				401541AB218C3D6D00782486 /* ShowWebModel.swift in Sources */,
+				401541B8218C671800782486 /* EpisodeService.swift in Sources */,
 				4015418B218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
 				40154188218B384300782486 /* Constants.swift in Sources */,
+				401541BB218C6D1F00782486 /* PublishEpisodeService.swift in Sources */,
+				401541CB218C863900782486 /* MediaWebModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

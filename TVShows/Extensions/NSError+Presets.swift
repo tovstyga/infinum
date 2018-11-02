@@ -14,6 +14,10 @@ extension NSError {
         return networkErrorWithMessage("Invalid request")
     }
     
+    static var commonError: NSError {
+        return NSError(domain: ErrorDomains.common.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: "Oops! something went wrong".localized])
+    }
+    
     class func networkErrorWithMessage(_ message: String) -> NSError {
        return NSError(domain: ErrorDomains.network.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: message.localized])
     }

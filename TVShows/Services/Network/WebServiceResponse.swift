@@ -19,15 +19,16 @@ protocol WebServiceResponseProtocol: class {
     var status: ResponseStatus {get}
     var source: AnyObject? {get}
     var error: Error? {get}
+    var statusCode: Int? {get}
     
-    init(source: AnyObject?, error: Error?)
+    init(source: AnyObject?, error: Error?, statusCode: Int?)
     
     func parseDataDictionary(_ data: [String: AnyObject])
     func parseDataArray(_ data: [AnyObject])
-    func customParseResponse(_ aSomeResponse: AnyObject)
-    func parseDictionary(_ aData: [String: AnyObject])
-    func parseArray(_ aData: [AnyObject])
-    func parseObject(_ aData: AnyObject)
+    func customParseResponse(_ someResponse: AnyObject)
+    func parseDictionary(_ data: [String: AnyObject])
+    func parseArray(_ data: [AnyObject])
+    func parseObject(_ data: AnyObject)
     func process(nativeResponse response: HTTPURLResponse?)
 }
 
@@ -39,9 +40,10 @@ class WebServiceResponse: WebServiceResponseProtocol {
     var error: Error?
     var responseDate: Date = Date()
     
-    required init(source: AnyObject?, error: Error?) {
+    required init(source: AnyObject?, error: Error?, statusCode: Int?) {
         self.source = source
         self.error = error
+        self.statusCode = statusCode
         
         if self.error == nil {
             self.error = WebServiceResponseValidator(response: source).validate()

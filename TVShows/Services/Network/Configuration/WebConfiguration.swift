@@ -21,7 +21,7 @@ enum WebServiceTag: String {
     case episode = "Episode"
     case episodes = "Episodes"
     case media = "Media"
-    case commects = "Comments"
+    case comments = "Comments"
     case addComment = "AddComment"
     case addEpisode = "AddEpisode"
 }

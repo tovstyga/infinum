@@ -10,4 +10,5 @@ import Foundation
 
 enum ErrorDomains: String {
     case network = "com.instinctools.TVShows.network"
+    case common = "com.instinctools.TVShows"
 }

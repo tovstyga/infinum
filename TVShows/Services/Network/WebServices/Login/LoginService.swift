@@ -14,6 +14,10 @@ class LoginRequest: WebServiceRequest {
     private(set) var email: String?
     private(set) var password: String?
     
+    override var tag: WebServiceTag? {
+        return WebServiceTag.login
+    }
+    
     convenience init(email: String, password: String) {
         self.init()
         self.email = email
@@ -32,10 +36,10 @@ class LoginRequest: WebServiceRequest {
 
 class LoginResponse: WebServiceResponse {
     
-    private(set) var result: LoginResponseModel?
+    private(set) var result: LoginWebModel?
     
     override func parseDataDictionary(_ data: [String: AnyObject]) {
-        result = LoginResponseModel(JSON: data)
+        result = LoginWebModel(JSON: data)
     }
     
 }
@@ -47,7 +51,7 @@ class LoginService: WebService<LoginRequest, LoginResponse> {
 class LoginCommand: Command<LoginRequest, LoginResponse> {
     
     internal override func constructService() -> WebService<LoginRequest, LoginResponse>? {
-        return factory.createLoginService()
+        return factory.loginService()
     }
     
 }

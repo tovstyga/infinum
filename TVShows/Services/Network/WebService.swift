@@ -35,11 +35,11 @@ class WebService<TRequest: WebServiceRequestProtocol, TResponse: WebServiceRespo
     
     func fetch(_ completion: ((TResponse) -> Void)?) {
         if !performRequest(request, completion: completion) {
-            completion?(TResponse(source: nil, error: NSError.invalidRequestError))
+            completion?(TResponse(source: nil, error: NSError.invalidRequestError, statusCode:400))
         }
     }
     
-    private func performRequest(_ request: TRequest?, retryIfNeeded retry: Bool, completion: ((TResponse) -> Void)?) -> Bool {
+    internal func performRequest(_ request: TRequest?, retryIfNeeded retry: Bool, completion: ((TResponse) -> Void)?) -> Bool {
         if let request = request {
             guard let URLString = WebServiceURLStringBuilder(baseUrl: self.baseURLString)?.appendEndpoint(request.endpoint).build() else {
                 return false
@@ -65,7 +65,7 @@ class WebService<TRequest: WebServiceRequestProtocol, TResponse: WebServiceRespo
                             self.removeRequest(withKey: request.identifier)
                         }
                         
-                        let result = TResponse(source: response.result.value as AnyObject, error: response.result.error as NSError?)
+                        let result = TResponse(source: response.result.value as AnyObject, error: response.result.error as NSError?, statusCode:response.response?.statusCode)
                         result.process(nativeResponse: response.response)
                         self.response = result
                         completion?(result)

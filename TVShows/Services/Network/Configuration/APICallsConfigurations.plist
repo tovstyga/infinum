@@ -57,9 +57,9 @@
 		<key>Configurations</key>
 		<dict>
 			<key>Dev</key>
-			<string>/api/episodes/%@</string>
+			<string>/api/episodes/</string>
 			<key>Prod</key>
-			<string>/api/episodes/%@</string>
+			<string>/api/episodes/</string>
 		</dict>
 	</dict>
 	<key>Show</key>
@@ -67,9 +67,9 @@
 		<key>Configurations</key>
 		<dict>
 			<key>Dev</key>
-			<string>/api/shows/%@</string>
+			<string>/api/shows/</string>
 			<key>Prod</key>
-			<string>/api/shows/%@</string>
+			<string>/api/shows/</string>
 		</dict>
 	</dict>
 	<key>ShowList</key>
