@@ -28,6 +28,38 @@
 		40154169218AEFB600782486 /* APICallsConfigurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40154167218AEFB600782486 /* APICallsConfigurations.plist */; };
 		4015416B218AF58D00782486 /* Version.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4015416A218AF58D00782486 /* Version.xcconfig */; };
 		4015416C218AF58D00782486 /* Version.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4015416A218AF58D00782486 /* Version.xcconfig */; };
+		40154172218B210400782486 /* WebConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154171218B210400782486 /* WebConfiguration.swift */; };
+		40154173218B210400782486 /* WebConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154171218B210400782486 /* WebConfiguration.swift */; };
+		40154175218B238500782486 /* ApplicationBuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154174218B238500782486 /* ApplicationBuildConfig.swift */; };
+		40154176218B238500782486 /* ApplicationBuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154174218B238500782486 /* ApplicationBuildConfig.swift */; };
+		40154178218B329C00782486 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154177218B329C00782486 /* WebService.swift */; };
+		40154179218B329C00782486 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154177218B329C00782486 /* WebService.swift */; };
+		4015417B218B349200782486 /* WebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015417A218B349200782486 /* WebServiceRequest.swift */; };
+		4015417C218B349200782486 /* WebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015417A218B349200782486 /* WebServiceRequest.swift */; };
+		4015417E218B34E900782486 /* WebServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015417D218B34E900782486 /* WebServiceResponse.swift */; };
+		4015417F218B34E900782486 /* WebServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015417D218B34E900782486 /* WebServiceResponse.swift */; };
+		40154182218B36B200782486 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154181218B36B200782486 /* String+Localization.swift */; };
+		40154183218B36B200782486 /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154181218B36B200782486 /* String+Localization.swift */; };
+		40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154184218B378F00782486 /* WebServiceResponseValidator.swift */; };
+		40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154184218B378F00782486 /* WebServiceResponseValidator.swift */; };
+		40154188218B384300782486 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154187218B384300782486 /* Constants.swift */; };
+		40154189218B384300782486 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154187218B384300782486 /* Constants.swift */; };
+		4015418B218B3E2C00782486 /* BaseNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015418A218B3E2C00782486 /* BaseNetworkingService.swift */; };
+		4015418C218B3E2C00782486 /* BaseNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015418A218B3E2C00782486 /* BaseNetworkingService.swift */; };
+		4015418E218B400600782486 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015418D218B400600782486 /* Operators.swift */; };
+		4015418F218B400600782486 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015418D218B400600782486 /* Operators.swift */; };
+		40154191218B467B00782486 /* NSError+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154190218B467B00782486 /* NSError+Presets.swift */; };
+		40154192218B467B00782486 /* NSError+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154190218B467B00782486 /* NSError+Presets.swift */; };
+		40154195218B4B3500782486 /* WebCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154194218B4B3500782486 /* WebCommand.swift */; };
+		40154196218B4B3500782486 /* WebCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154194218B4B3500782486 /* WebCommand.swift */; };
+		40154198218B4CBE00782486 /* WebServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154197218B4CBE00782486 /* WebServiceFactory.swift */; };
+		40154199218B4CBE00782486 /* WebServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40154197218B4CBE00782486 /* WebServiceFactory.swift */; };
+		4015419D218B4D9200782486 /* DictionaryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419C218B4D9200782486 /* DictionaryBuilder.swift */; };
+		4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419C218B4D9200782486 /* DictionaryBuilder.swift */; };
+		401541A0218B4DCB00782486 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419F218B4DCB00782486 /* LoginService.swift */; };
+		401541A1218B4DCB00782486 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015419F218B4DCB00782486 /* LoginService.swift */; };
+		401541A4218B4E8800782486 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginResponseModel.swift */; };
+		401541A5218B4E8800782486 /* LoginResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541A3218B4E8800782486 /* LoginResponseModel.swift */; };
 		4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047C452218ADC1300599F57 /* AppDelegate.swift */; };
 		4047C458218ADC1300599F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C456218ADC1300599F57 /* Main.storyboard */; };
 		4047C45A218ADC1600599F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4047C459218ADC1600599F57 /* Assets.xcassets */; };
@@ -47,6 +79,22 @@
 		40154161218AEE3A00782486 /* TVShowDev_Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TVShowDev_Release.xcconfig; sourceTree = "<group>"; };
 		40154167218AEFB600782486 /* APICallsConfigurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APICallsConfigurations.plist; sourceTree = "<group>"; };
 		4015416A218AF58D00782486 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
+		40154171218B210400782486 /* WebConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConfiguration.swift; sourceTree = "<group>"; };
+		40154174218B238500782486 /* ApplicationBuildConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBuildConfig.swift; sourceTree = "<group>"; };
+		40154177218B329C00782486 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4015417A218B349200782486 /* WebServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceRequest.swift; sourceTree = "<group>"; };
+		4015417D218B34E900782486 /* WebServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceResponse.swift; sourceTree = "<group>"; };
+		40154181218B36B200782486 /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		40154184218B378F00782486 /* WebServiceResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceResponseValidator.swift; sourceTree = "<group>"; };
+		40154187218B384300782486 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4015418A218B3E2C00782486 /* BaseNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkingService.swift; sourceTree = "<group>"; };
+		4015418D218B400600782486 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		40154190218B467B00782486 /* NSError+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Presets.swift"; sourceTree = "<group>"; };
+		40154194218B4B3500782486 /* WebCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCommand.swift; sourceTree = "<group>"; };
+		40154197218B4CBE00782486 /* WebServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceFactory.swift; sourceTree = "<group>"; };
+		4015419C218B4D9200782486 /* DictionaryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryBuilder.swift; sourceTree = "<group>"; };
+		4015419F218B4DCB00782486 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		401541A3218B4E8800782486 /* LoginResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModel.swift; sourceTree = "<group>"; };
 		4047C44F218ADC1300599F57 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4047C452218ADC1300599F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4047C457218ADC1300599F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,7 +195,14 @@
 		40154165218AEF6200782486 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				401541A2218B4E5D00782486 /* Models */,
+				40154193218B4ABC00782486 /* WebServices */,
 				40154166218AEF7000782486 /* Configuration */,
+				40154177218B329C00782486 /* WebService.swift */,
+				4015417A218B349200782486 /* WebServiceRequest.swift */,
+				4015417D218B34E900782486 /* WebServiceResponse.swift */,
+				40154184218B378F00782486 /* WebServiceResponseValidator.swift */,
+				4015418A218B3E2C00782486 /* BaseNetworkingService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -156,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				40154167218AEFB600782486 /* APICallsConfigurations.plist */,
+				40154171218B210400782486 /* WebConfiguration.swift */,
+				40154174218B238500782486 /* ApplicationBuildConfig.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -164,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				4047C452218ADC1300599F57 /* AppDelegate.swift */,
+				40154187218B384300782486 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -175,6 +233,50 @@
 				4047C456218ADC1300599F57 /* Main.storyboard */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		40154180218B366900782486 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40154181218B36B200782486 /* String+Localization.swift */,
+				4015418D218B400600782486 /* Operators.swift */,
+				40154190218B467B00782486 /* NSError+Presets.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40154193218B4ABC00782486 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				4015419A218B4D1C00782486 /* Login */,
+				40154194218B4B3500782486 /* WebCommand.swift */,
+				40154197218B4CBE00782486 /* WebServiceFactory.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		4015419A218B4D1C00782486 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4015419F218B4DCB00782486 /* LoginService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4015419B218B4D7900782486 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4015419C218B4D9200782486 /* DictionaryBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		401541A2218B4E5D00782486 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				401541A3218B4E8800782486 /* LoginResponseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4047C446218ADC1300599F57 = {
@@ -199,6 +301,8 @@
 		4047C451218ADC1300599F57 /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
+				4015419B218B4D7900782486 /* Helpers */,
+				40154180218B366900782486 /* Extensions */,
 				40154170218AF9E600782486 /* UI */,
 				4015416F218AF97800782486 /* Application */,
 				40154164218AEF5A00782486 /* Services */,
@@ -438,7 +542,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				40154142218AE92200782486 /* AppDelegate.swift in Sources */,
+				40154176218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
+				40154179218B329C00782486 /* WebService.swift in Sources */,
+				40154173218B210400782486 /* WebConfiguration.swift in Sources */,
+				401541A5218B4E8800782486 /* LoginResponseModel.swift in Sources */,
+				40154196218B4B3500782486 /* WebCommand.swift in Sources */,
+				4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
+				401541A1218B4DCB00782486 /* LoginService.swift in Sources */,
+				4015417C218B349200782486 /* WebServiceRequest.swift in Sources */,
+				40154199218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				4015418F218B400600782486 /* Operators.swift in Sources */,
+				40154183218B36B200782486 /* String+Localization.swift in Sources */,
+				40154192218B467B00782486 /* NSError+Presets.swift in Sources */,
+				4015417F218B34E900782486 /* WebServiceResponse.swift in Sources */,
+				4015418C218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
+				40154189218B384300782486 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +566,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */,
+				40154175218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
+				40154178218B329C00782486 /* WebService.swift in Sources */,
+				40154172218B210400782486 /* WebConfiguration.swift in Sources */,
+				401541A4218B4E8800782486 /* LoginResponseModel.swift in Sources */,
+				40154195218B4B3500782486 /* WebCommand.swift in Sources */,
+				4015419D218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
+				401541A0218B4DCB00782486 /* LoginService.swift in Sources */,
+				4015417B218B349200782486 /* WebServiceRequest.swift in Sources */,
+				40154198218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				4015418E218B400600782486 /* Operators.swift in Sources */,
+				40154182218B36B200782486 /* String+Localization.swift in Sources */,
+				40154191218B467B00782486 /* NSError+Presets.swift in Sources */,
+				4015417E218B34E900782486 /* WebServiceResponse.swift in Sources */,
+				4015418B218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
+				40154188218B384300782486 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
