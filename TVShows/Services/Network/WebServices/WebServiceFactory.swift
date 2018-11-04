@@ -49,39 +49,57 @@ class WebServiceFactoryAbstract {
 
 class WebServiceFactory: WebServiceFactoryAbstract {
     
+    private let authService: AuthorizationServiceProtocol = AuthorizationService(service: CredentialService())
+    
     override func loginService() -> WebService<LoginRequest, LoginResponse>? {
         return LoginService()
     }
     
     override func showListService() -> WebService<ShowListRequest, ShowListResponse>? {
-        return ShowListService()
+        let service = ShowListService()
+        service.authService = authService
+        return service
     }
     
     override func showService() -> WebService<ShowRequest, ShowResponse>? {
-        return ShowService()
+        let service = ShowService()
+        service.authService = authService
+        return service
     }
     
     override func episodesListService() -> WebService<EpisodesListRequest, EpisodesListResponse>? {
-        return EpisodesListService()
+        let service = EpisodesListService()
+        service.authService = authService
+        return service
     }
     
     override func episodeService() -> WebService<EpisodeRequest, EpisodeResponse>? {
-        return EpisodeService()
+        let service = EpisodeService()
+        service.authService = authService
+        return service
     }
     
     override func publishEpisodeService() -> WebService<PublishEpisodeRequest, PublishEpisodeResponse>? {
-        return PublishEpisodeService()
+        let service = PublishEpisodeService()
+        service.authService = authService
+        return service
     }
     
     override func commentsService() -> WebService<CommentsRequest, CommentsResponse>? {
-        return CommentsService()
+        let service = CommentsService()
+        service.authService = authService
+        return service
     }
     
     override func publishCommentService() -> WebService<PublishCommentRequest, PublishCommentResponse>? {
-        return PublishCommentService()
+        let service = PublishCommentService()
+        service.authService = authService
+        return service
     }
     
     override func uploadMediaService() -> WebService<UploadMediaRequest, UploadMediaResponse>? {
-        return UploadMediaService()
+        let service = UploadMediaService()
+        service.authService = authService
+        return service
     }
 }

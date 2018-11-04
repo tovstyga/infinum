@@ -15,11 +15,15 @@ extension NSError {
     }
     
     static var commonError: NSError {
-        return NSError(domain: ErrorDomains.common.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: "Oops! something went wrong".localized])
+        return NSError(domain: Domains.common.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: "Oops! something went wrong".localized])
+    }
+    
+    static var keychainError: NSError {
+        return NSError(domain: Domains.common.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: "Operation failed".localized])
     }
     
     class func networkErrorWithMessage(_ message: String) -> NSError {
-       return NSError(domain: ErrorDomains.network.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: message.localized])
+       return NSError(domain: Domains.network.rawValue, code: 0, userInfo: [NSLocalizedDescriptionKey: message.localized])
     }
     
 }

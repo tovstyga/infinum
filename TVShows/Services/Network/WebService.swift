@@ -12,7 +12,7 @@ protocol AuthorizationServiceProtocol: class {
     
     func authorizationHeaders() -> [String: String]?
     func isContainAuthError(_ response: HTTPURLResponse) -> Bool
-    func relogin(_ completion:(_ success: Bool) -> Void)
+    func relogin(_ completion: @escaping (_ success: Bool) -> Void)
     
 }
 
@@ -21,12 +21,9 @@ class WebService<TRequest: WebServiceRequestProtocol, TResponse: WebServiceRespo
     var authService: AuthorizationServiceProtocol?
     
     override var additionalHeaders: [AnyHashable: Any]? {
-        
-        let accessToken = ""
-        
+    
         return ["Content-Type": "application/json",
-                "Accept": "application/json",
-                "Authorization": accessToken
+                "Accept": "application/json"
         ]
     }
     

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3105578E7C0F18C8F72918B1 /* Pods_TVShows__Dev_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C7C0B0FE41EF731FFF87B5 /* Pods_TVShows__Dev_.framework */; };
+		40054320218EE3000023DA3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005431F218EE3000023DA3E /* LoginViewController.swift */; };
+		40054321218EE3000023DA3E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4005431F218EE3000023DA3E /* LoginViewController.swift */; };
+		40054323218EE32E0023DA3E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054322218EE32E0023DA3E /* LoginInteractor.swift */; };
+		40054324218EE32E0023DA3E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054322218EE32E0023DA3E /* LoginInteractor.swift */; };
+		40054326218EE3540023DA3E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054325218EE3540023DA3E /* LoginCoordinator.swift */; };
+		40054327218EE3540023DA3E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40054325218EE3540023DA3E /* LoginCoordinator.swift */; };
 		40154142218AE92200782486 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047C452218ADC1300599F57 /* AppDelegate.swift */; };
 		40154145218AE92200782486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C45B218ADC1600599F57 /* LaunchScreen.storyboard */; };
 		40154146218AE92200782486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4047C459218ADC1600599F57 /* Assets.xcassets */; };
@@ -84,15 +90,40 @@
 		401541C9218C862600782486 /* MediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541C7218C862600782486 /* MediaService.swift */; };
 		401541CB218C863900782486 /* MediaWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CA218C863900782486 /* MediaWebModel.swift */; };
 		401541CC218C863900782486 /* MediaWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CA218C863900782486 /* MediaWebModel.swift */; };
+		401541CF218DF82500782486 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CE218DF82500782486 /* Coordinator.swift */; };
+		401541D0218DF82500782486 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541CE218DF82500782486 /* Coordinator.swift */; };
+		401541D2218DF84800782486 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D1218DF84800782486 /* ApplicationCoordinator.swift */; };
+		401541D3218DF84800782486 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D1218DF84800782486 /* ApplicationCoordinator.swift */; };
+		401541D5218DFE3800782486 /* UIColor+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D4218DFE3800782486 /* UIColor+Presets.swift */; };
+		401541D6218DFE3800782486 /* UIColor+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D4218DFE3800782486 /* UIColor+Presets.swift */; };
+		401541D9218E09AD00782486 /* CredentialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D8218E09AD00782486 /* CredentialService.swift */; };
+		401541DA218E09AD00782486 /* CredentialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D8218E09AD00782486 /* CredentialService.swift */; };
 		4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047C452218ADC1300599F57 /* AppDelegate.swift */; };
 		4047C458218ADC1300599F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C456218ADC1300599F57 /* Main.storyboard */; };
 		4047C45A218ADC1600599F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4047C459218ADC1600599F57 /* Assets.xcassets */; };
 		4047C45D218ADC1600599F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C45B218ADC1600599F57 /* LaunchScreen.storyboard */; };
+		40557E70218EE99E00635121 /* UIStoryboard+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E6F218EE99E00635121 /* UIStoryboard+Instantiation.swift */; };
+		40557E71218EE9A100635121 /* UIStoryboard+Instantiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E6F218EE99E00635121 /* UIStoryboard+Instantiation.swift */; };
+		40557E74218EF14B00635121 /* ShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E73218EF14B00635121 /* ShowsListViewController.swift */; };
+		40557E75218EF14B00635121 /* ShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E73218EF14B00635121 /* ShowsListViewController.swift */; };
+		40557E77218EF19000635121 /* ShowsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E76218EF19000635121 /* ShowsListCoordinator.swift */; };
+		40557E78218EF19000635121 /* ShowsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E76218EF19000635121 /* ShowsListCoordinator.swift */; };
+		40557E7A218EF1E500635121 /* ShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E79218EF1E500635121 /* ShowsListInteractor.swift */; };
+		40557E7B218EF1E500635121 /* ShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E79218EF1E500635121 /* ShowsListInteractor.swift */; };
+		40A75DBE218F445100AACEB6 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */; };
+		40A75DBF218F445100AACEB6 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */; };
+		40A75DC1218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */; };
+		40A75DC2218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */; };
+		40A75DC5218F508C00AACEB6 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */; };
+		40A75DC6218F508C00AACEB6 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */; };
 		C80752478763291BE3266F61 /* Pods_TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640C6D1FD14D4959E5236ABF /* Pods_TVShows.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		066352290CB0D718E02680CA /* Pods-TVShows (Dev).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows (Dev).debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows (Dev)/Pods-TVShows (Dev).debug.xcconfig"; sourceTree = "<group>"; };
+		4005431F218EE3000023DA3E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		40054322218EE32E0023DA3E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		40054325218EE3540023DA3E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		4015414B218AE92200782486 /* TVShows (Dev).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TVShows (Dev).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4015414C218AE92300782486 /* TVShows-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TVShows-Dev.plist"; path = "/Users/fantom/Desktop/TVShows/TVShows/TVShows-Dev.plist"; sourceTree = "<absolute>"; };
 		40154152218AED0D00782486 /* TVShow.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TVShow.xcconfig; sourceTree = "<group>"; };
@@ -131,12 +162,23 @@
 		401541C4218C7D0800782486 /* CommentWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentWebModel.swift; sourceTree = "<group>"; };
 		401541C7218C862600782486 /* MediaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaService.swift; sourceTree = "<group>"; };
 		401541CA218C863900782486 /* MediaWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaWebModel.swift; sourceTree = "<group>"; };
+		401541CE218DF82500782486 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		401541D1218DF84800782486 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		401541D4218DFE3800782486 /* UIColor+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Presets.swift"; sourceTree = "<group>"; };
+		401541D8218E09AD00782486 /* CredentialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialService.swift; sourceTree = "<group>"; };
 		4047C44F218ADC1300599F57 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4047C452218ADC1300599F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4047C457218ADC1300599F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4047C459218ADC1600599F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4047C45C218ADC1600599F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4047C45E218ADC1600599F57 /* TVShows.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TVShows.plist; sourceTree = "<group>"; };
+		40557E6F218EE99E00635121 /* UIStoryboard+Instantiation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiation.swift"; sourceTree = "<group>"; };
+		40557E73218EF14B00635121 /* ShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListViewController.swift; sourceTree = "<group>"; };
+		40557E76218EF19000635121 /* ShowsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListCoordinator.swift; sourceTree = "<group>"; };
+		40557E79218EF1E500635121 /* ShowsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListInteractor.swift; sourceTree = "<group>"; };
+		40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Progress.swift"; sourceTree = "<group>"; };
+		40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
 		59C7C0B0FE41EF731FFF87B5 /* Pods_TVShows__Dev_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShows__Dev_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640C6D1FD14D4959E5236ABF /* Pods_TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		680B45AFEB70C9D2D5C8146C /* Pods-TVShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +213,25 @@
 				59C7C0B0FE41EF731FFF87B5 /* Pods_TVShows__Dev_.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4005431D218EE2B70023DA3E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				40557E72218EF11B00635121 /* ShowsList */,
+				4005431E218EE2C20023DA3E /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4005431E218EE2C20023DA3E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4005431F218EE3000023DA3E /* LoginViewController.swift */,
+				40054322218EE32E0023DA3E /* LoginInteractor.swift */,
+				40054325218EE3540023DA3E /* LoginCoordinator.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		4015414D218AEC3500782486 /* SupportingFiles */ = {
@@ -223,6 +284,8 @@
 		40154164218AEF5A00782486 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				40A75DC3218F505F00AACEB6 /* Authentication */,
+				401541D7218E096A00782486 /* Credential */,
 				40154165218AEF6200782486 /* Network */,
 			);
 			path = Services;
@@ -256,6 +319,7 @@
 		4015416F218AF97800782486 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				401541CD218DF7F400782486 /* Coordinator */,
 				4047C452218ADC1300599F57 /* AppDelegate.swift */,
 				40154187218B384300782486 /* Constants.swift */,
 			);
@@ -277,6 +341,10 @@
 				40154181218B36B200782486 /* String+Localization.swift */,
 				4015418D218B400600782486 /* Operators.swift */,
 				40154190218B467B00782486 /* NSError+Presets.swift */,
+				401541D4218DFE3800782486 /* UIColor+Presets.swift */,
+				40557E6F218EE99E00635121 /* UIStoryboard+Instantiation.swift */,
+				40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */,
+				40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -351,6 +419,23 @@
 			path = Comments;
 			sourceTree = "<group>";
 		};
+		401541CD218DF7F400782486 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				401541CE218DF82500782486 /* Coordinator.swift */,
+				401541D1218DF84800782486 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		401541D7218E096A00782486 /* Credential */ = {
+			isa = PBXGroup;
+			children = (
+				401541D8218E09AD00782486 /* CredentialService.swift */,
+			);
+			path = Credential;
+			sourceTree = "<group>";
+		};
 		4047C446218ADC1300599F57 = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +458,7 @@
 		4047C451218ADC1300599F57 /* TVShows */ = {
 			isa = PBXGroup;
 			children = (
+				4005431D218EE2B70023DA3E /* Modules */,
 				4015419B218B4D7900782486 /* Helpers */,
 				40154180218B366900782486 /* Extensions */,
 				40154170218AF9E600782486 /* UI */,
@@ -383,6 +469,24 @@
 				4015414D218AEC3500782486 /* SupportingFiles */,
 			);
 			path = TVShows;
+			sourceTree = "<group>";
+		};
+		40557E72218EF11B00635121 /* ShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				40557E73218EF14B00635121 /* ShowsListViewController.swift */,
+				40557E76218EF19000635121 /* ShowsListCoordinator.swift */,
+				40557E79218EF1E500635121 /* ShowsListInteractor.swift */,
+			);
+			path = ShowsList;
+			sourceTree = "<group>";
+		};
+		40A75DC3218F505F00AACEB6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		4D3CD1B92266594522909D77 /* Pods */ = {
@@ -447,6 +551,13 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Aliaksandr Taustyha";
 				TargetAttributes = {
+					4015413F218AE92200782486 = {
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
 					4047C44E218ADC1300599F57 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -522,6 +633,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TVShows (Dev)/Pods-TVShows (Dev)-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -530,6 +642,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +661,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-TVShows/Pods-TVShows-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -556,6 +670,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,24 +731,36 @@
 			files = (
 				40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				40154142218AE92200782486 /* AppDelegate.swift in Sources */,
+				40A75DBF218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
+				401541D0218DF82500782486 /* Coordinator.swift in Sources */,
 				401541C9218C862600782486 /* MediaService.swift in Sources */,
 				401541AF218C4BBC00782486 /* ShowService.swift in Sources */,
 				401541C3218C7BF000782486 /* PublishCommentService.swift in Sources */,
+				40054327218EE3540023DA3E /* LoginCoordinator.swift in Sources */,
+				40557E7B218EF1E500635121 /* ShowsListInteractor.swift in Sources */,
 				40154176218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
 				40154179218B329C00782486 /* WebService.swift in Sources */,
+				40557E75218EF14B00635121 /* ShowsListViewController.swift in Sources */,
 				401541B2218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154173218B210400782486 /* WebConfiguration.swift in Sources */,
 				401541A5218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154196218B4B3500782486 /* WebCommand.swift in Sources */,
 				4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A1218B4DCB00782486 /* LoginService.swift in Sources */,
+				401541DA218E09AD00782486 /* CredentialService.swift in Sources */,
+				40A75DC6218F508C00AACEB6 /* AuthorizationService.swift in Sources */,
+				40A75DC2218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */,
+				401541D6218DFE3800782486 /* UIColor+Presets.swift in Sources */,
 				4015417C218B349200782486 /* WebServiceRequest.swift in Sources */,
 				40154199218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				40557E71218EE9A100635121 /* UIStoryboard+Instantiation.swift in Sources */,
 				401541B6218C529900782486 /* EpisodesListService.swift in Sources */,
 				4015418F218B400600782486 /* Operators.swift in Sources */,
 				40154183218B36B200782486 /* String+Localization.swift in Sources */,
+				40557E78218EF19000635121 /* ShowsListCoordinator.swift in Sources */,
 				401541C0218C7BDB00782486 /* CommentsService.swift in Sources */,
 				40154192218B467B00782486 /* NSError+Presets.swift in Sources */,
+				40054324218EE32E0023DA3E /* LoginInteractor.swift in Sources */,
 				401541A9218C3BCA00782486 /* ShowListService.swift in Sources */,
 				4015417F218B34E900782486 /* WebServiceResponse.swift in Sources */,
 				401541C6218C7D0800782486 /* CommentWebModel.swift in Sources */,
@@ -641,8 +768,10 @@
 				401541B9218C671800782486 /* EpisodeService.swift in Sources */,
 				4015418C218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
 				40154189218B384300782486 /* Constants.swift in Sources */,
+				40054321218EE3000023DA3E /* LoginViewController.swift in Sources */,
 				401541BC218C6D1F00782486 /* PublishEpisodeService.swift in Sources */,
 				401541CC218C863900782486 /* MediaWebModel.swift in Sources */,
+				401541D3218DF84800782486 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,24 +781,36 @@
 			files = (
 				40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */,
+				40A75DBE218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
+				401541CF218DF82500782486 /* Coordinator.swift in Sources */,
 				401541C8218C862600782486 /* MediaService.swift in Sources */,
 				401541AE218C4BBC00782486 /* ShowService.swift in Sources */,
 				401541C2218C7BF000782486 /* PublishCommentService.swift in Sources */,
+				40054326218EE3540023DA3E /* LoginCoordinator.swift in Sources */,
+				40557E7A218EF1E500635121 /* ShowsListInteractor.swift in Sources */,
 				40154175218B238500782486 /* ApplicationBuildConfig.swift in Sources */,
 				40154178218B329C00782486 /* WebService.swift in Sources */,
+				40557E74218EF14B00635121 /* ShowsListViewController.swift in Sources */,
 				401541B1218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154172218B210400782486 /* WebConfiguration.swift in Sources */,
 				401541A4218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154195218B4B3500782486 /* WebCommand.swift in Sources */,
 				4015419D218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A0218B4DCB00782486 /* LoginService.swift in Sources */,
+				401541D9218E09AD00782486 /* CredentialService.swift in Sources */,
+				40A75DC5218F508C00AACEB6 /* AuthorizationService.swift in Sources */,
+				40A75DC1218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */,
+				401541D5218DFE3800782486 /* UIColor+Presets.swift in Sources */,
 				4015417B218B349200782486 /* WebServiceRequest.swift in Sources */,
 				40154198218B4CBE00782486 /* WebServiceFactory.swift in Sources */,
+				40557E70218EE99E00635121 /* UIStoryboard+Instantiation.swift in Sources */,
 				401541B5218C529900782486 /* EpisodesListService.swift in Sources */,
 				4015418E218B400600782486 /* Operators.swift in Sources */,
 				40154182218B36B200782486 /* String+Localization.swift in Sources */,
+				40557E77218EF19000635121 /* ShowsListCoordinator.swift in Sources */,
 				401541BF218C7BDB00782486 /* CommentsService.swift in Sources */,
 				40154191218B467B00782486 /* NSError+Presets.swift in Sources */,
+				40054323218EE32E0023DA3E /* LoginInteractor.swift in Sources */,
 				401541A8218C3BCA00782486 /* ShowListService.swift in Sources */,
 				4015417E218B34E900782486 /* WebServiceResponse.swift in Sources */,
 				401541C5218C7D0800782486 /* CommentWebModel.swift in Sources */,
@@ -677,8 +818,10 @@
 				401541B8218C671800782486 /* EpisodeService.swift in Sources */,
 				4015418B218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
 				40154188218B384300782486 /* Constants.swift in Sources */,
+				40054320218EE3000023DA3E /* LoginViewController.swift in Sources */,
 				401541BB218C6D1F00782486 /* PublishEpisodeService.swift in Sources */,
 				401541CB218C863900782486 /* MediaWebModel.swift in Sources */,
+				401541D2218DF84800782486 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

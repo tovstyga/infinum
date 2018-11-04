@@ -8,7 +8,16 @@
 
 import Foundation
 
-enum ErrorDomains: String {
+enum Domains: String {
     case network = "com.instinctools.TVShows.network"
     case common = "com.instinctools.TVShows"
+}
+
+extension Notification.Name {
+
+    enum app {
+        static let credentialsChanged = Notification.Name("credential_changed_notification")
+        static let invalidCredentialsNotification = Notification.Name("invalid_credentials_notification_name")
+    }
+    
 }

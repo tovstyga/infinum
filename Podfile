@@ -10,6 +10,7 @@ def standart_pods
   pod 'Alamofire', '~> 4.7.3'
   pod 'Kingfisher', '~> 4.10.0'
   pod 'ObjectMapper', '~> 3.3.0'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end
 
