@@ -31,7 +31,7 @@ class ShowListResponse: WebServiceResponse {
     
     private(set) var result: [ShowWebModel] = []
     
-    override func parseArray(_ data: [AnyObject]) {
+    override func parseDataArray(_ data: [AnyObject]) {
         for object in data {
             guard let json = object as? [String : Any], let show = ShowWebModel(JSON: json) else {
                 continue
@@ -40,6 +40,7 @@ class ShowListResponse: WebServiceResponse {
             result.append(show)
         }
     }
+
 }
 
 class ShowListService: WebService<ShowListRequest, ShowListResponse> {

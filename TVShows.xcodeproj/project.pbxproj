@@ -116,6 +116,14 @@
 		40A75DC2218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */; };
 		40A75DC5218F508C00AACEB6 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */; };
 		40A75DC6218F508C00AACEB6 /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */; };
+		40A75DC8218F6CCB00AACEB6 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC7218F6CCB00AACEB6 /* UIImage+Color.swift */; };
+		40A75DC9218F6CCB00AACEB6 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC7218F6CCB00AACEB6 /* UIImage+Color.swift */; };
+		40A75DCB218F78DA00AACEB6 /* ShowListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DCA218F78DA00AACEB6 /* ShowListTableViewCell.swift */; };
+		40A75DCC218F78DA00AACEB6 /* ShowListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DCA218F78DA00AACEB6 /* ShowListTableViewCell.swift */; };
+		40A75DD12190236300AACEB6 /* UIImage+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DD02190236300AACEB6 /* UIImage+Presets.swift */; };
+		40A75DD22190236300AACEB6 /* UIImage+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DD02190236300AACEB6 /* UIImage+Presets.swift */; };
+		40A75DD421903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DD321903F5000AACEB6 /* UITableView+Dequeue.swift */; };
+		40A75DD521903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DD321903F5000AACEB6 /* UITableView+Dequeue.swift */; };
 		C80752478763291BE3266F61 /* Pods_TVShows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640C6D1FD14D4959E5236ABF /* Pods_TVShows.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +187,10 @@
 		40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Progress.swift"; sourceTree = "<group>"; };
 		40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		40A75DC7218F6CCB00AACEB6 /* UIImage+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		40A75DCA218F78DA00AACEB6 /* ShowListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListTableViewCell.swift; sourceTree = "<group>"; };
+		40A75DD02190236300AACEB6 /* UIImage+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Presets.swift"; sourceTree = "<group>"; };
+		40A75DD321903F5000AACEB6 /* UITableView+Dequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeue.swift"; sourceTree = "<group>"; };
 		59C7C0B0FE41EF731FFF87B5 /* Pods_TVShows__Dev_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShows__Dev_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		640C6D1FD14D4959E5236ABF /* Pods_TVShows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVShows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		680B45AFEB70C9D2D5C8146C /* Pods-TVShows.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShows.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShows/Pods-TVShows.release.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +357,9 @@
 				40557E6F218EE99E00635121 /* UIStoryboard+Instantiation.swift */,
 				40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */,
 				40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */,
+				40A75DC7218F6CCB00AACEB6 /* UIImage+Color.swift */,
+				40A75DD02190236300AACEB6 /* UIImage+Presets.swift */,
+				40A75DD321903F5000AACEB6 /* UITableView+Dequeue.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -477,6 +492,7 @@
 				40557E73218EF14B00635121 /* ShowsListViewController.swift */,
 				40557E76218EF19000635121 /* ShowsListCoordinator.swift */,
 				40557E79218EF1E500635121 /* ShowsListInteractor.swift */,
+				40A75DCA218F78DA00AACEB6 /* ShowListTableViewCell.swift */,
 			);
 			path = ShowsList;
 			sourceTree = "<group>";
@@ -732,6 +748,7 @@
 				40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				40154142218AE92200782486 /* AppDelegate.swift in Sources */,
 				40A75DBF218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
+				40A75DD521903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */,
 				401541D0218DF82500782486 /* Coordinator.swift in Sources */,
 				401541C9218C862600782486 /* MediaService.swift in Sources */,
 				401541AF218C4BBC00782486 /* ShowService.swift in Sources */,
@@ -745,6 +762,7 @@
 				40154173218B210400782486 /* WebConfiguration.swift in Sources */,
 				401541A5218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154196218B4B3500782486 /* WebCommand.swift in Sources */,
+				40A75DD22190236300AACEB6 /* UIImage+Presets.swift in Sources */,
 				4015419E218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A1218B4DCB00782486 /* LoginService.swift in Sources */,
 				401541DA218E09AD00782486 /* CredentialService.swift in Sources */,
@@ -758,7 +776,9 @@
 				4015418F218B400600782486 /* Operators.swift in Sources */,
 				40154183218B36B200782486 /* String+Localization.swift in Sources */,
 				40557E78218EF19000635121 /* ShowsListCoordinator.swift in Sources */,
+				40A75DC9218F6CCB00AACEB6 /* UIImage+Color.swift in Sources */,
 				401541C0218C7BDB00782486 /* CommentsService.swift in Sources */,
+				40A75DCC218F78DA00AACEB6 /* ShowListTableViewCell.swift in Sources */,
 				40154192218B467B00782486 /* NSError+Presets.swift in Sources */,
 				40054324218EE32E0023DA3E /* LoginInteractor.swift in Sources */,
 				401541A9218C3BCA00782486 /* ShowListService.swift in Sources */,
@@ -782,6 +802,7 @@
 				40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */,
 				40A75DBE218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
+				40A75DD421903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */,
 				401541CF218DF82500782486 /* Coordinator.swift in Sources */,
 				401541C8218C862600782486 /* MediaService.swift in Sources */,
 				401541AE218C4BBC00782486 /* ShowService.swift in Sources */,
@@ -795,6 +816,7 @@
 				40154172218B210400782486 /* WebConfiguration.swift in Sources */,
 				401541A4218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40154195218B4B3500782486 /* WebCommand.swift in Sources */,
+				40A75DD12190236300AACEB6 /* UIImage+Presets.swift in Sources */,
 				4015419D218B4D9200782486 /* DictionaryBuilder.swift in Sources */,
 				401541A0218B4DCB00782486 /* LoginService.swift in Sources */,
 				401541D9218E09AD00782486 /* CredentialService.swift in Sources */,
@@ -808,7 +830,9 @@
 				4015418E218B400600782486 /* Operators.swift in Sources */,
 				40154182218B36B200782486 /* String+Localization.swift in Sources */,
 				40557E77218EF19000635121 /* ShowsListCoordinator.swift in Sources */,
+				40A75DC8218F6CCB00AACEB6 /* UIImage+Color.swift in Sources */,
 				401541BF218C7BDB00782486 /* CommentsService.swift in Sources */,
+				40A75DCB218F78DA00AACEB6 /* ShowListTableViewCell.swift in Sources */,
 				40154191218B467B00782486 /* NSError+Presets.swift in Sources */,
 				40054323218EE32E0023DA3E /* LoginInteractor.swift in Sources */,
 				401541A8218C3BCA00782486 /* ShowListService.swift in Sources */,

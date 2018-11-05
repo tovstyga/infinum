@@ -14,7 +14,7 @@ struct ShowWebModel: Mappable {
     private(set) var type: String?
     private(set) var title: String?
     private(set) var info: String?
-    private(set) var id: String?
+    private(set) var id: String
     private(set) var likesCount: Int?
     private(set) var imageUrl: String?
     
@@ -28,10 +28,11 @@ struct ShowWebModel: Mappable {
     }
     
     init?(map: Map) {
-        id = try? map.value(Keys.id.rawValue)
-        guard let _ = id else {
+        let source: String? = try? map.value(Keys.id.rawValue)
+        guard let _id = source else {
             return nil;
         }
+        id = _id
         type = try? map.value(Keys.type.rawValue)
         title = try? map.value(Keys.title.rawValue)
         info = try? map.value(Keys.info.rawValue)

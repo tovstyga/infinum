@@ -8,17 +8,31 @@
 
 import UIKit
 
+protocol ShowsListCoordinatorDataSource: class {
+    
+    func findShow(identifier: String) -> ShowWebModel?
+    
+}
+
 class ShowsListCoordinator: Coordinator {
     var rootViewController: UINavigationController
     
     var childCoordinators: [Coordinator] = []
     
-    init(rootViewController: UINavigationController) {
+    private weak var dataSource: ShowsListCoordinatorDataSource?
+    private weak var parent: Coordinator?
+    
+    init(rootViewController: UINavigationController, parentCoordinator: Coordinator) {
         self.rootViewController = rootViewController
+        self.parent = parentCoordinator
     }
     
     func start(with completion: CoordinatorCallback?) {
         let viewController = UIStoryboard.instance.main.instantiateViewController(ofType: ShowsListViewController.self)
+        viewController.coordinator = self
+        let interactor = ShowsListInteractor()
+        self.dataSource = interactor
+        viewController.interactor = interactor
         rootViewController.setViewControllers([viewController], animated: true)
     }
     
@@ -26,5 +40,20 @@ class ShowsListCoordinator: Coordinator {
         
     }
     
+}
+
+extension ShowsListCoordinator: ShowsListCoordinatorProtocol {
+    
+    func logout() {
+        parent?.stopChild(coordinator: self, completion: nil)
+    }
+    
+    func openShow(identifier: String?) {
+        guard let id = identifier, let model = dataSource?.findShow(identifier: id) else {
+            return
+        }
+        
+        //TODO: open details screen
+    }
     
 }

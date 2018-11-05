@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -219,29 +218,60 @@
             <point key="canvasLocation" x="117.59999999999999" y="133.5832083958021"/>
         </scene>
         <!--Shows List View Controller-->
-        <scene sceneID="CEo-Dz-wkL">
+        <scene sceneID="4gF-RQ-f3N">
             <objects>
-                <viewController storyboardIdentifier="ShowsListViewController" id="HCx-k4-Y4b" customClass="ShowsListViewController" customModule="TVShows" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a3J-HD-gIx">
+                <tableViewController storyboardIdentifier="ShowsListViewController" id="Gdf-GF-G3M" customClass="ShowsListViewController" customModule="TVShows" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zko-Fy-Cqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDZ-4W-IwD">
-                                <rect key="frame" x="164" y="84" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="logoutAction:" destination="HCx-k4-Y4b" eventType="touchUpInside" id="JM9-fQ-US8"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="WZf-83-JmA"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1mj-Qy-rPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowListTableViewCell" rowHeight="114" id="Wvb-ni-LHP" customClass="ShowListTableViewCell" customModule="TVShows" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="114"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wvb-ni-LHP" id="dIk-SS-jHq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-eD-YuI">
+                                            <rect key="frame" x="16" y="11" width="64" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="1PG-br-zns"/>
+                                                <constraint firstAttribute="width" constant="64" id="ECM-Yx-SMl"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyk-7y-wKp">
+                                            <rect key="frame" x="96" y="11" width="247" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pyk-7y-wKp" secondAttribute="trailing" constant="16" id="2d6-Nn-RvT"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="pyk-7y-wKp" secondAttribute="bottom" id="5f7-TY-WSO"/>
+                                        <constraint firstItem="pyk-7y-wKp" firstAttribute="leading" secondItem="KOf-eD-YuI" secondAttribute="trailing" constant="16" id="ArV-6v-EP1"/>
+                                        <constraint firstItem="KOf-eD-YuI" firstAttribute="top" secondItem="dIk-SS-jHq" secondAttribute="topMargin" id="DYM-0t-57U"/>
+                                        <constraint firstItem="KOf-eD-YuI" firstAttribute="leading" secondItem="dIk-SS-jHq" secondAttribute="leadingMargin" id="L8E-dh-Fhz"/>
+                                        <constraint firstItem="KOf-eD-YuI" firstAttribute="bottom" secondItem="dIk-SS-jHq" secondAttribute="bottomMargin" id="fb8-Q3-ADK"/>
+                                        <constraint firstItem="pyk-7y-wKp" firstAttribute="top" secondItem="dIk-SS-jHq" secondAttribute="topMargin" id="v7E-dL-qUc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="showIcon" destination="KOf-eD-YuI" id="b6h-LS-6LW"/>
+                                    <outlet property="showNameLabel" destination="pyk-7y-wKp" id="EYp-wu-8vK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gdf-GF-G3M" id="e2e-2P-TwS"/>
+                            <outlet property="delegate" destination="Gdf-GF-G3M" id="Gqg-af-PpK"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeE-Vm-jV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="132"/>
+            <point key="canvasLocation" x="852" y="137.18140929535232"/>
         </scene>
     </scenes>
     <resources>

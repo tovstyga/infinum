@@ -78,7 +78,7 @@ class AppCoordinator: Coordinator {
     }
     
     private func presentMainScreen() {
-        let showsCoordinator = ShowsListCoordinator(rootViewController: rootViewController)
+        let showsCoordinator = ShowsListCoordinator(rootViewController: rootViewController, parentCoordinator: self)
         startChild(coordinator: showsCoordinator, completion: nil)
     }
 }

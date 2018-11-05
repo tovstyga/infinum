@@ -15,6 +15,7 @@ extension UIColor {
         static let gray = UIColor(rgbHex: 0x505050)
         static let darkGray = UIColor(rgbHex: 0x2E2E2E)
         static let lightGray = UIColor(rgbHex: 0xA0A0A0)
+        static let ultraLightGray = UIColor(rgbHex: 0xEEF1F5)
     }
     
     convenience init(rgbHex: Int, alpha: CGFloat = 1) {
