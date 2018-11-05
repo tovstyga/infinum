@@ -53,7 +53,8 @@ extension ShowsListCoordinator: ShowsListCoordinatorProtocol {
             return
         }
         
-        //TODO: open details screen
+        let coordinator = ShowDetailsCoordinator(rootViewController: rootViewController, parentCoordinator: self, model: model)
+        startChild(coordinator: coordinator, completion: nil)
     }
     
 }

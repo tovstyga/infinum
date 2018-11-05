@@ -13,7 +13,7 @@ class ShowsListInteractor {
     private var _data: [ShowListCellModel] = []
     private var source: [ShowWebModel] = []
     
-    private var baseUrlString: String?
+    private var baseUrlString: String? = WebConfiguration(webServiceTag: .base)?.baseUrl
     
 }
 
@@ -24,7 +24,7 @@ extension ShowsListInteractor: ShowsListInteractorProtocol {
     }
     
     func reloadData(completion: @escaping ((Error?) -> Void)) {
-        let command = ShowListCommand(request: ShowListRequest()) {[weak self] response in
+        ShowListCommand(request: ShowListRequest()) {[weak self] response in
             DispatchQueue.main.async {
                 guard let `self` = self else {
                     return
@@ -43,9 +43,7 @@ extension ShowsListInteractor: ShowsListInteractorProtocol {
                 
                 completion(response?.error)
             }
-        }
-        baseUrlString = command.constructService()?.baseURLString
-        command.perform()
+        }.perform()
     }
     
     func identifierForModel(_ model: ShowListCellModelProtocol) -> String? {

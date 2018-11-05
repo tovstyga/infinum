@@ -38,7 +38,7 @@ class EpisodesListResponse: WebServiceResponse {
     
     private(set) var result: [EpisodeWebModel] = []
     
-    override func parseArray(_ data: [AnyObject]) {
+    override func parseDataArray(_ data: [AnyObject]) {
         for object in data {
             guard let json = object as? [String : Any], let episode = EpisodeWebModel(JSON: json) else {
                 continue

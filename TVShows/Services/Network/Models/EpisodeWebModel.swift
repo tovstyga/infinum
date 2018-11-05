@@ -11,7 +11,7 @@ import ObjectMapper
 
 struct EpisodeWebModel: Mappable {
     
-    private(set) var id: String?
+    private(set) var id: String
     private(set) var title: String?
     private(set) var info: String?
     private(set) var imageUrl: String?
@@ -32,10 +32,11 @@ struct EpisodeWebModel: Mappable {
     }
     
     init?(map: Map) {
-        id = try? map.value(Keys.id.rawValue)
-        guard let _ = id else {
+        let source: String? = try? map.value(Keys.id.rawValue)
+        guard let _id = source else {
             return nil;
         }
+        id = _id
         title = try? map.value(Keys.title.rawValue)
         info = try? map.value(Keys.info.rawValue)
         imageUrl = try? map.value(Keys.imageUrl.rawValue)
