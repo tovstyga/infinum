@@ -48,12 +48,11 @@ class PublishEpisodeRequest: WebServiceRequest {
 
 class PublishEpisodeResponse: WebServiceResponse {
     
-    required init(source: AnyObject?, error: Error?, statusCode: Int?) {
-        super.init(source: source, error: error, statusCode: statusCode)
-        status = statusCode == 201 ? .success : .error
-        self.error = self.error ?? NSError.commonError
-    }
+    private(set) var result: EpisodeWebModel?
     
+    override func parseDataDictionary(_ data: [String : AnyObject]) {
+        result = EpisodeWebModel(JSON: data)
+    }
 }
 
 class PublishEpisodeService: WebService<PublishEpisodeRequest, PublishEpisodeResponse> {

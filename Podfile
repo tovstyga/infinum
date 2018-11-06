@@ -11,7 +11,8 @@ def standart_pods
   pod 'Kingfisher', '~> 4.10.0'
   pod 'ObjectMapper', '~> 3.3.0'
   pod 'MBProgressHUD', '~> 1.1.0'
-
+  pod 'UITextView+Placeholder', '~> 1.2.1'
+  
 end
 
 target 'TVShows' do

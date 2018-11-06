@@ -48,6 +48,10 @@ class WebService<TRequest: WebServiceRequestProtocol, TResponse: WebServiceRespo
                 }
             }
             
+            if request.headers == nil {
+                request.headers = authService?.authorizationHeaders()
+            }
+            
             let params = request.normalize()
             let networkRequest = manager.request(URLString,
                                                  method: request.method,

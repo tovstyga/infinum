@@ -29,7 +29,7 @@ class UploadMediaResponse: WebServiceResponse {
     
     private(set) var result: MediaWebModel?
     
-    override func parseDictionary(_ data: [String : AnyObject]) {
+    override func parseDataDictionary(_ data: [String : AnyObject]) {
         result = MediaWebModel(JSON: data)
     }
     
@@ -49,6 +49,10 @@ class UploadMediaService: WebService<UploadMediaRequest, UploadMediaResponse> {
                 for (key, value) in authHeaders {
                     request.headers![key] = value
                 }
+            }
+            
+            if request.headers == nil {
+                request.headers = authService?.authorizationHeaders()
             }
             
             manager.upload(multipartFormData: { formData in

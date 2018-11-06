@@ -56,7 +56,9 @@ class ShowDetailsCoordinator: Coordinator {
 extension ShowDetailsCoordinator: ShowDetailsCoordinatorProtocol {
     
     func createNewEpisode() {
-        
+        let coordinator = CreateNewEpisodeCoordinator(rootViewController: rootViewController, parentCoordinator: self, model: model)
+        coordinator.delegate = self
+        startChild(coordinator: coordinator, completion: nil)
     }
     
     func back() {
@@ -70,6 +72,14 @@ extension ShowDetailsCoordinator: ShowDetailsCoordinatorProtocol {
         
         let coordinator = EpisodeCoordinator(rootViewController: rootViewController, parentCoordinator: self, model: episode)
         startChild(coordinator: coordinator, completion: nil)
+    }
+    
+}
+
+extension ShowDetailsCoordinator: CreateNewEpisodeCoordinatorDelegate {
+    
+    func episodeCreated() {
+        delegate?.newEpisodeCreated()
     }
     
 }

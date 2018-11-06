@@ -68,6 +68,7 @@ class ShowDetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+        currentAlpha = 0
     }
     
     override func viewDidLayoutSubviews() {
