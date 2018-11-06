@@ -41,9 +41,16 @@ class ShowDetailsViewController: UIViewController {
         }
     }
     private var defaultOffset: CGFloat {
-        return imageVeiw.bounds.height - 40
+        //30 - shadow height
+        return imageVeiw.frame.height - 30 - tableView.frame.minY
     }
     
+    var isCreationNewAvaiable: Bool = true
+    @IBOutlet private weak var addButton: UIButton! {
+        didSet {
+            addButton.isHidden = !isCreationNewAvaiable
+        }
+    }
     @IBOutlet private weak var imageVeiw: UIImageView!
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -56,6 +63,11 @@ class ShowDetailsViewController: UIViewController {
         super.viewDidLoad()
         customize()
         update()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
     }
     
     override func viewDidLayoutSubviews() {
@@ -80,6 +92,8 @@ class ShowDetailsViewController: UIViewController {
         backButton.addTarget(self, action: #selector(ShowDetailsViewController.backAction(_:)), for: .touchUpInside)
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backButton)
+        
+        imageVeiw.layer.masksToBounds = true
         
     }
     

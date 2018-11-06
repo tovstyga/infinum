@@ -34,7 +34,7 @@ class ShowsListViewController: UITableViewController {
         customize()
         update()
     }
-
+    
     private func customize() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.setBackgroundImage(UIImage.from(color: .white), for: .default)

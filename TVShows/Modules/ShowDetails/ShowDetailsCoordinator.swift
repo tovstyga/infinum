@@ -38,7 +38,7 @@ class ShowDetailsCoordinator: Coordinator {
     }
     
     func start(with completion: CoordinatorCallback?) {
-        let viewController = UIStoryboard.instance.main.instantiateViewController(ofType: ShowDetailsViewController.self)
+        let viewController = UIStoryboard.instance.main.instantiateViewController(ofType: EpisodeViewController.self)
         self.delegate = viewController
         viewController.coordinator = self
         let interactor = ShowDetailsInteractor(show: model)
@@ -68,7 +68,8 @@ extension ShowDetailsCoordinator: ShowDetailsCoordinatorProtocol {
             return
         }
         
-        //TODO: open details
+        let coordinator = EpisodeCoordinator(rootViewController: rootViewController, parentCoordinator: self, model: episode)
+        startChild(coordinator: coordinator, completion: nil)
     }
     
 }

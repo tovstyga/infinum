@@ -25,6 +25,16 @@ class ShowDescriptionModel: CommonCellModel<ShowDescriptionCell>, ShowDescriptio
         self.info = info
     }
     
+    override func dequeueCellAtIndexPath(_ indexPath: IndexPath, tableView: UITableView) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(class: EpisodeInfoCell.self, indexPath: indexPath) else {
+            return UITableViewCell()
+        }
+        
+        cell.bindWithModel(self)
+        
+        return cell
+    }
+    
 }
 
 class ShowDescriptionCell: CommonCell<ShowDescriptionModelProtocol> {

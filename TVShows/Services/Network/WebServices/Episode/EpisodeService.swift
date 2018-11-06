@@ -17,9 +17,9 @@ class EpisodeRequest: WebServiceRequest {
         return WebServiceTag.episode
     }
     
-    convenience init(identifier: String) {
+    convenience init(id: String) {
         self.init()
-        self.id = identifier
+        self.id = id
         self.method = .get
     }
     
