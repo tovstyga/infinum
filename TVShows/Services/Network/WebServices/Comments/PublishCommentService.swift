@@ -38,7 +38,7 @@ class PublishCommentResponse: WebServiceResponse {
     
     private(set) var result: CommentWebModel?
     
-    override func parseDictionary(_ data: [String : AnyObject]) {
+    override func parseDataDictionary(_ data: [String : AnyObject]) {
         result = CommentWebModel(JSON: data)
     }
     

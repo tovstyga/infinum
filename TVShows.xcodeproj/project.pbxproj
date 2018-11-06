@@ -98,6 +98,14 @@
 		401541D6218DFE3800782486 /* UIColor+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D4218DFE3800782486 /* UIColor+Presets.swift */; };
 		401541D9218E09AD00782486 /* CredentialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D8218E09AD00782486 /* CredentialService.swift */; };
 		401541DA218E09AD00782486 /* CredentialService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401541D8218E09AD00782486 /* CredentialService.swift */; };
+		40240D71219208C200BA5A72 /* KBKeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 40240D70219208C200BA5A72 /* KBKeyboardObserver.m */; };
+		40240D72219208C200BA5A72 /* KBKeyboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 40240D70219208C200BA5A72 /* KBKeyboardObserver.m */; };
+		402869A02191DC3D0041A9F8 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028699F2191DC3D0041A9F8 /* CommentsViewController.swift */; };
+		402869A12191DC3D0041A9F8 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4028699F2191DC3D0041A9F8 /* CommentsViewController.swift */; };
+		402869A32191DC530041A9F8 /* CommentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402869A22191DC530041A9F8 /* CommentsCoordinator.swift */; };
+		402869A42191DC530041A9F8 /* CommentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402869A22191DC530041A9F8 /* CommentsCoordinator.swift */; };
+		402869A62191DC620041A9F8 /* CommentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402869A52191DC620041A9F8 /* CommentsInteractor.swift */; };
+		402869A72191DC620041A9F8 /* CommentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402869A52191DC620041A9F8 /* CommentsInteractor.swift */; };
 		4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047C452218ADC1300599F57 /* AppDelegate.swift */; };
 		4047C458218ADC1300599F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4047C456218ADC1300599F57 /* Main.storyboard */; };
 		4047C45A218ADC1600599F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4047C459218ADC1600599F57 /* Assets.xcassets */; };
@@ -110,6 +118,8 @@
 		40557E78218EF19000635121 /* ShowsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E76218EF19000635121 /* ShowsListCoordinator.swift */; };
 		40557E7A218EF1E500635121 /* ShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E79218EF1E500635121 /* ShowsListInteractor.swift */; };
 		40557E7B218EF1E500635121 /* ShowsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40557E79218EF1E500635121 /* ShowsListInteractor.swift */; };
+		408E80AA2191E5AC0027DC15 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E80A92191E5AC0027DC15 /* CommentCell.swift */; };
+		408E80AB2191E5AC0027DC15 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E80A92191E5AC0027DC15 /* CommentCell.swift */; };
 		40A75DBE218F445100AACEB6 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */; };
 		40A75DBF218F445100AACEB6 /* UIViewController+Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */; };
 		40A75DC1218F461D00AACEB6 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */; };
@@ -202,6 +212,13 @@
 		401541D1218DF84800782486 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		401541D4218DFE3800782486 /* UIColor+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Presets.swift"; sourceTree = "<group>"; };
 		401541D8218E09AD00782486 /* CredentialService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialService.swift; sourceTree = "<group>"; };
+		40240D6D219208C200BA5A72 /* TVShows-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShows-Bridging-Header.h"; sourceTree = "<group>"; };
+		40240D6E219208C200BA5A72 /* TVShows (Dev)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShows (Dev)-Bridging-Header.h"; sourceTree = "<group>"; };
+		40240D6F219208C200BA5A72 /* KBKeyboardObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KBKeyboardObserver.h; sourceTree = "<group>"; };
+		40240D70219208C200BA5A72 /* KBKeyboardObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBKeyboardObserver.m; sourceTree = "<group>"; };
+		4028699F2191DC3D0041A9F8 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		402869A22191DC530041A9F8 /* CommentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCoordinator.swift; sourceTree = "<group>"; };
+		402869A52191DC620041A9F8 /* CommentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInteractor.swift; sourceTree = "<group>"; };
 		4047C44F218ADC1300599F57 /* TVShows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4047C452218ADC1300599F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4047C457218ADC1300599F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -212,6 +229,7 @@
 		40557E73218EF14B00635121 /* ShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListViewController.swift; sourceTree = "<group>"; };
 		40557E76218EF19000635121 /* ShowsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListCoordinator.swift; sourceTree = "<group>"; };
 		40557E79218EF1E500635121 /* ShowsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsListInteractor.swift; sourceTree = "<group>"; };
+		408E80A92191E5AC0027DC15 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		40A75DBD218F445100AACEB6 /* UIViewController+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Progress.swift"; sourceTree = "<group>"; };
 		40A75DC0218F461D00AACEB6 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		40A75DC4218F508C00AACEB6 /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
@@ -272,6 +290,7 @@
 		4005431D218EE2B70023DA3E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4028699E2191DC230041A9F8 /* Comments */,
 				40A75E042191820C00AACEB6 /* AddingEpisode */,
 				40A75DF22190E32300AACEB6 /* Episode */,
 				40A75DD9219057AF00AACEB6 /* ShowDetails */,
@@ -294,6 +313,8 @@
 		4015414D218AEC3500782486 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				40240D6D219208C200BA5A72 /* TVShows-Bridging-Header.h */,
+				40240D6E219208C200BA5A72 /* TVShows (Dev)-Bridging-Header.h */,
 				4047C45E218ADC1600599F57 /* TVShows.plist */,
 				4015414C218AE92300782486 /* TVShows-Dev.plist */,
 				4015416A218AF58D00782486 /* Version.xcconfig */,
@@ -434,6 +455,8 @@
 			isa = PBXGroup;
 			children = (
 				4015419C218B4D9200782486 /* DictionaryBuilder.swift */,
+				40240D6F219208C200BA5A72 /* KBKeyboardObserver.h */,
+				40240D70219208C200BA5A72 /* KBKeyboardObserver.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -494,6 +517,17 @@
 				401541D8218E09AD00782486 /* CredentialService.swift */,
 			);
 			path = Credential;
+			sourceTree = "<group>";
+		};
+		4028699E2191DC230041A9F8 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				4028699F2191DC3D0041A9F8 /* CommentsViewController.swift */,
+				402869A22191DC530041A9F8 /* CommentsCoordinator.swift */,
+				402869A52191DC620041A9F8 /* CommentsInteractor.swift */,
+				408E80A92191E5AC0027DC15 /* CommentCell.swift */,
+			);
+			path = Comments;
 			sourceTree = "<group>";
 		};
 		4047C446218ADC1300599F57 = {
@@ -672,6 +706,7 @@
 				ORGANIZATIONNAME = "Aliaksandr Taustyha";
 				TargetAttributes = {
 					4015413F218AE92200782486 = {
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 0;
@@ -680,6 +715,7 @@
 					};
 					4047C44E218ADC1300599F57 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -853,9 +889,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408E80AB2191E5AC0027DC15 /* CommentCell.swift in Sources */,
 				40154186218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				40154142218AE92200782486 /* AppDelegate.swift in Sources */,
 				40A75DFB2190E40D00AACEB6 /* EpisodeInteractor.swift in Sources */,
+				402869A42191DC530041A9F8 /* CommentsCoordinator.swift in Sources */,
 				40A75DF0219067A500AACEB6 /* CommonCell.swift in Sources */,
 				40A75DBF218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
 				40A75DD521903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */,
@@ -863,6 +901,7 @@
 				401541C9218C862600782486 /* MediaService.swift in Sources */,
 				401541AF218C4BBC00782486 /* ShowService.swift in Sources */,
 				40A75DEC219064AF00AACEB6 /* ShowDescriptionCell.swift in Sources */,
+				40240D72219208C200BA5A72 /* KBKeyboardObserver.m in Sources */,
 				401541C3218C7BF000782486 /* PublishCommentService.swift in Sources */,
 				40054327218EE3540023DA3E /* LoginCoordinator.swift in Sources */,
 				40557E7B218EF1E500635121 /* ShowsListInteractor.swift in Sources */,
@@ -872,6 +911,7 @@
 				40557E75218EF14B00635121 /* ShowsListViewController.swift in Sources */,
 				401541B2218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154173218B210400782486 /* WebConfiguration.swift in Sources */,
+				402869A72191DC620041A9F8 /* CommentsInteractor.swift in Sources */,
 				401541A5218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40A75DF52190E3B000AACEB6 /* EpisodeViewController.swift in Sources */,
 				40A75DDC2190586900AACEB6 /* ShowDetailsViewController.swift in Sources */,
@@ -907,6 +947,7 @@
 				401541B9218C671800782486 /* EpisodeService.swift in Sources */,
 				40A75DF82190E3E900AACEB6 /* EpisodeCoordinator.swift in Sources */,
 				4015418C218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
+				402869A12191DC3D0041A9F8 /* CommentsViewController.swift in Sources */,
 				40154189218B384300782486 /* Constants.swift in Sources */,
 				40054321218EE3000023DA3E /* LoginViewController.swift in Sources */,
 				40A75DE22190589F00AACEB6 /* ShowDetailsInteractor.swift in Sources */,
@@ -921,9 +962,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408E80AA2191E5AC0027DC15 /* CommentCell.swift in Sources */,
 				40154185218B378F00782486 /* WebServiceResponseValidator.swift in Sources */,
 				4047C453218ADC1300599F57 /* AppDelegate.swift in Sources */,
 				40A75DFA2190E40D00AACEB6 /* EpisodeInteractor.swift in Sources */,
+				402869A32191DC530041A9F8 /* CommentsCoordinator.swift in Sources */,
 				40A75DEF219067A500AACEB6 /* CommonCell.swift in Sources */,
 				40A75DBE218F445100AACEB6 /* UIViewController+Progress.swift in Sources */,
 				40A75DD421903F5000AACEB6 /* UITableView+Dequeue.swift in Sources */,
@@ -931,6 +974,7 @@
 				401541C8218C862600782486 /* MediaService.swift in Sources */,
 				401541AE218C4BBC00782486 /* ShowService.swift in Sources */,
 				40A75DEB219064AF00AACEB6 /* ShowDescriptionCell.swift in Sources */,
+				40240D71219208C200BA5A72 /* KBKeyboardObserver.m in Sources */,
 				401541C2218C7BF000782486 /* PublishCommentService.swift in Sources */,
 				40054326218EE3540023DA3E /* LoginCoordinator.swift in Sources */,
 				40557E7A218EF1E500635121 /* ShowsListInteractor.swift in Sources */,
@@ -940,6 +984,7 @@
 				40557E74218EF14B00635121 /* ShowsListViewController.swift in Sources */,
 				401541B1218C4F9C00782486 /* EpisodeWebModel.swift in Sources */,
 				40154172218B210400782486 /* WebConfiguration.swift in Sources */,
+				402869A62191DC620041A9F8 /* CommentsInteractor.swift in Sources */,
 				401541A4218B4E8800782486 /* LoginWebModel.swift in Sources */,
 				40A75DF42190E3B000AACEB6 /* EpisodeViewController.swift in Sources */,
 				40A75DDB2190586900AACEB6 /* ShowDetailsViewController.swift in Sources */,
@@ -975,6 +1020,7 @@
 				401541B8218C671800782486 /* EpisodeService.swift in Sources */,
 				40A75DF72190E3E900AACEB6 /* EpisodeCoordinator.swift in Sources */,
 				4015418B218B3E2C00782486 /* BaseNetworkingService.swift in Sources */,
+				402869A02191DC3D0041A9F8 /* CommentsViewController.swift in Sources */,
 				40154188218B384300782486 /* Constants.swift in Sources */,
 				40054320218EE3000023DA3E /* LoginViewController.swift in Sources */,
 				40A75DE12190589F00AACEB6 /* ShowDetailsInteractor.swift in Sources */,
@@ -1012,6 +1058,7 @@
 			baseConfigurationReference = 066352290CB0D718E02680CA /* Pods-TVShows (Dev).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TMN87LT38;
 				INFOPLIST_FILE = "$(SRCROOT)/TVShows-Dev.plist";
@@ -1022,6 +1069,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.instinctools.TVShowsDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShows/SupportingFiles/TVShows (Dev)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1032,6 +1081,7 @@
 			baseConfigurationReference = 8609DD64C1CA4B86CE0D566B /* Pods-TVShows (Dev).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TMN87LT38;
 				INFOPLIST_FILE = "$(SRCROOT)/TVShows-Dev.plist";
@@ -1042,6 +1092,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.instinctools.TVShowsDev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShows/SupportingFiles/TVShows (Dev)-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1168,6 +1219,7 @@
 			baseConfigurationReference = E295D51A5B583AD8B08F7CCE /* Pods-TVShows.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TMN87LT38;
 				INFOPLIST_FILE = "$(SRCROOT)/TVShows/SupportingFiles/TVShows.plist";
@@ -1178,6 +1230,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.instinctools.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShows/SupportingFiles/TVShows-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1188,6 +1242,7 @@
 			baseConfigurationReference = 680B45AFEB70C9D2D5C8146C /* Pods-TVShows.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2TMN87LT38;
 				INFOPLIST_FILE = "$(SRCROOT)/TVShows/SupportingFiles/TVShows.plist";
@@ -1198,6 +1253,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.instinctools.TVShows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShows/SupportingFiles/TVShows-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

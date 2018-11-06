@@ -35,6 +35,12 @@ class ShowsListViewController: UITableViewController {
         update()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.setBackgroundImage(UIImage.from(color: .white), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
     private func customize() {
         navigationController?.setNavigationBarHidden(false, animated: true)
         navigationController?.navigationBar.setBackgroundImage(UIImage.from(color: .white), for: .default)

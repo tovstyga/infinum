@@ -1,21 +1,19 @@
 //
-//  EpisodeCoordinator.swift
+//  CommentsCoordinator.swift
 //  TVShows
 //
-//  Created by Aliaksandr Taustyha on 11/5/18.
+//  Created by Aliaksandr Taustyha on 11/6/18.
 //  Copyright © 2018 Aliaksandr Taustyha. All rights reserved.
 //
 
 import UIKit
 
-class EpisodeCoordinator: Coordinator {
-    
+class CommentsCoordinator: Coordinator {
     var rootViewController: UINavigationController
-    
-    var childCoordinators: [Coordinator] = []
-    
     private weak var parent: Coordinator?
     private var model: EpisodeWebModel
+    
+    var childCoordinators: [Coordinator] = []
     
     init(rootViewController: UINavigationController, parentCoordinator: Coordinator, model: EpisodeWebModel) {
         self.rootViewController = rootViewController
@@ -24,10 +22,9 @@ class EpisodeCoordinator: Coordinator {
     }
     
     func start(with completion: CoordinatorCallback?) {
-        let viewController = UIStoryboard.instance.main.instantiateViewController(ofType: EpisodeViewController.self)
+        let viewController = UIStoryboard.instance.main.instantiateViewController(ofType: CommentsViewController.self)
         viewController.coordinator = self
-        viewController.interactor = EpisodeInteractor(episode: model)
-        viewController.isCreationNewAvaiable = false
+        viewController.interactor = CommentsInteractor(episode: model)
         rootViewController.pushViewController(viewController, animated: true)
     }
     
@@ -37,23 +34,9 @@ class EpisodeCoordinator: Coordinator {
     
 }
 
-extension EpisodeCoordinator: EpisodeCoordinatorProtocol {
-    
-    func openComments() {
-        let coordinator = CommentsCoordinator.init(rootViewController: rootViewController, parentCoordinator: self, model: model)
-        startChild(coordinator: coordinator, completion: nil)
-    }
-    
-    func createNewEpisode() {
-        
-    }
+extension CommentsCoordinator: CommentsCoordinatorProtocol {
     
     func back() {
         parent?.stopChild(coordinator: self, completion: nil)
     }
-    
-    func openEpisode(identifier: String?) {
-        
-    }
-    
 }

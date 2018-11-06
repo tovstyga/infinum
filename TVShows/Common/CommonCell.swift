@@ -57,4 +57,9 @@ class CommonCell<M: Any>: UITableViewCell, ModelBindable {
         
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        model = nil
+    }
+    
 }

@@ -22,7 +22,7 @@ class CreateNewEpisodeCoordinator: Coordinator {
     
     weak var delegate: CreateNewEpisodeCoordinatorDelegate?
     
-    private let parent: Coordinator
+    private weak var parent: Coordinator?
     private let model: ShowWebModel
     
     init(rootViewController: UINavigationController, parentCoordinator: Coordinator, model: ShowWebModel) {
@@ -48,7 +48,7 @@ class CreateNewEpisodeCoordinator: Coordinator {
 extension CreateNewEpisodeCoordinator: CreateNewEpisodeCoordinatorProtocol {
     
     func back(needsReload: Bool) {
-        parent.stopChild(coordinator: self) { coordinator in
+        parent?.stopChild(coordinator: self) { coordinator in
             if needsReload {
                 self.delegate?.episodeCreated()
             }
